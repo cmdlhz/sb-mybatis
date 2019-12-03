@@ -1,0 +1,37 @@
+#container {
+  margin-top: 30px;
+}
+#container * {
+  box-sizing: border-box;
+}
+#container h1 {
+  text-align: center;
+}
+#container #main {
+  background-color: #f7f7ba;
+  margin: 20px auto;
+  width: 800px;
+  padding: 20px;
+  border-style: solid;
+  border-color: #0e5426;
+}
+#container #main .checkBox {
+  float: right;
+}
+#container #main .divs {
+  margin-bottom: 50px;
+}
+#container #main .subDivs {
+  clear: both;
+}
+#container #main .subDivs .reqBackground {
+  background-color: #f5cbf4;
+  padding: 10px;
+}
+#container #main .subDivs .reqBackground .reqEmp {
+  color: #cf21ca;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+/*# sourceMappingURL=style.css.map */

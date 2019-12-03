@@ -1,0 +1,46 @@
+$lightYellow: #f7f7ba;
+$lightPink:  #f5cbf4;
+$pink: #cf21ca;
+$deepGreen: #0e5426;
+
+#container{
+    margin-top: 30px;
+    *{
+        box-sizing: border-box;
+    }
+
+    h1{
+        text-align: center;
+    }
+    #main{
+        background-color: $lightYellow;
+        margin: 20px auto;
+        width: 800px;
+        padding: 20px;
+        border-style: solid;
+        border-color: $deepGreen;
+
+        .checkBox{
+            float: right;
+        }
+
+        .divs{
+            margin-bottom: 50px;
+        }
+
+        .subDivs{
+            clear: both;
+
+            .reqBackground{
+                background-color: $lightPink;
+                padding: 10px;
+        
+                .reqEmp{
+                    color: $pink;
+                    font-weight: bold;
+                    font-size: 130%;
+                }
+            }
+        }
+    }
+}
