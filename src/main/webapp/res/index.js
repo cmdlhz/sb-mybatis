@@ -1,17 +1,43 @@
 function selectAll(){
-    var bindChecked = document.querySelector('#agreeAll').checked;
-    // console.log(bindChecked);
     var check_agreements = document.querySelectorAll('.checkAgr');
-    var intLength = check_agreements.length;
-    // console.log(intLength);
 
-    for(let i=0; i<intLength; i++){
+    for(let i=0; i<check_agreements.length; i++){
         var check_agreement = check_agreements[i];
-        // console.log(check_agreement);
-        check_agreement.checked = bindChecked;
+        check_agreement.checked = true;
     }
 }
 
 function submit(){
-    location.href = "/users";
+    var secondBtn = document.querySelector('#agreeOne');
+    var thirdBtn = document.querySelector('#agreeTwo');
+
+    if(secondBtn.checked && thirdBtn.checked){
+        location.href = "/users";
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'You have to agree to all statements to submit the form.',
+            showClass: {
+              popup: 'animated fadeInDown faster'
+            },
+            hideClass: {
+              popup: 'animated fadeOutUp faster'
+            }
+          })
+    }
+}
+
+function firstAni(){
+    var title = document.querySelector('#firstAni');
+    title.classList.add('animated', 'bounceOutLeft');
+}
+
+function secondAni(){
+    var title = document.querySelector('#secondAni');
+    title.classList.add('animated', 'flipInX');
+}
+
+function thirdAni(){
+    var title = document.querySelector('#thirdAni');
+    title.classList.add('animated', 'zoomInDown');
 }
