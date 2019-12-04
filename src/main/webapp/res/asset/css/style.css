@@ -33,5 +33,8 @@
   font-weight: bold;
   font-size: 130%;
 }
+#container #main .subDivs .content {
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */
